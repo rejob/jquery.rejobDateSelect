@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <title>jquery.rejobDateSelect</title>
+
+    <link href="https://cdn.jsdelivr.net/picnicss/6.2.5/picnic.min.css" rel="stylesheet">
+    <link href="dist/styles/application.css" rel="stylesheet">
+</head>
+<body>
+
+<h1>jquery.rejobDateSelect</h1>
+
+<section>
+    <h2>aaa</h2>
+    2015-04-16 〜 2017-05-15
+
+    <div class="sample">
+        <div class="flex three"
+             data-rejob-date-select
+             data-rejob-date-select-start="2015-04-16"
+             data-rejob-date-select-end="2017-05-15"
+             data-rejob-date-select-year=".year"
+             data-rejob-date-select-month=".month"
+             data-rejob-date-select-date=".date">
+
+            <div>
+                <select class="year">
+                    <option value="">年</option>
+                    <option value="2014">2014年</option>
+                    <option value="2015">2015年</option>
+                    <option value="2016" selected>2016年</option>
+                    <option value="2017">2017年</option>
+                    <option value="2018">2018年</option>
+                </select>
+            </div>
+
+            <div>
+                <select class="month">
+                    <option value="">月</option>
+                    <option value="1">1月</option>
+                    <option value="2">2月</option>
+                    <option value="3">3月</option>
+                    <option value="4">4月</option>
+                    <option value="5">5月</option>
+                    <option value="6" selected>6月</option>
+                    <option value="7">7月</option>
+                    <option value="8">8月</option>
+                    <option value="9">9月</option>
+                    <option value="10">10月</option>
+                    <option value="11">11月</option>
+                    <option value="12">12月</option>
+                </select>
+            </div>
+
+            <div>
+                <select class="date">
+                    <option value="">日</option>
+                    <option value="1">1日</option>
+                    <option value="2">2日</option>
+                    <option value="3">3日</option>
+                    <option value="4">4日</option>
+                    <option value="5">5日</option>
+                    <option value="6">6日</option>
+                    <option value="7">7日</option>
+                    <option value="8">8日</option>
+                    <option value="9">9日</option>
+                    <option value="10" selected>10日</option>
+                    <option value="11">11日</option>
+                    <option value="12">12日</option>
+                    <option value="13">13日</option>
+                    <option value="14">14日</option>
+                    <option value="15">15日</option>
+                    <option value="16">16日</option>
+                    <option value="17">17日</option>
+                    <option value="18">18日</option>
+                    <option value="19">19日</option>
+                    <option value="20">20日</option>
+                    <option value="21">21日</option>
+                    <option value="22">22日</option>
+                    <option value="23">23日</option>
+                    <option value="24">24日</option>
+                    <option value="25">25日</option>
+                    <option value="26">26日</option>
+                    <option value="27">27日</option>
+                    <option value="28">28日</option>
+                    <option value="29">29日</option>
+                    <option value="30">30日</option>
+                    <option value="31">31日</option>
+                    <option value="32">32日</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <pre><code>&lt;div <span class="special-attr">data-rejob-date-select
+     data-rejob-date-select-start="2015-04-16"
+     data-rejob-date-select-end="2017-05-15"
+     data-rejob-date-select-year=".year"
+     data-rejob-date-select-month=".month"
+     data-rejob-date-select-date=".date</span>"&gt;
+
+    &lt;select class="year"&gt;
+        &lt;option value=""&gt;年&lt;/option&gt;
+        &lt;option value="2014"&gt;2014年&lt;/option&gt;
+        &lt;option value="2015"&gt;2015年&lt;/option&gt;
+        &lt;option value="2016" selected&gt;2016年&lt;/option&gt;
+        &lt;option value="2017"&gt;2017年&lt;/option&gt;
+        &lt;option value="2018"&gt;2018年&lt;/option&gt;
+    &lt;/select&gt;
+
+    &lt;select class="month"&gt;
+        &lt;option value=""&gt;月&lt;/option&gt;
+        &lt;option value="1"&gt;1月&lt;/option&gt;
+        &lt;option value="2"&gt;2月&lt;/option&gt;
+        &lt;option value="3"&gt;3月&lt;/option&gt;
+        &lt;option value="4"&gt;4月&lt;/option&gt;
+        &lt;option value="5"&gt;5月&lt;/option&gt;
+        &lt;option value="6" selected&gt;6月&lt;/option&gt;
+        &lt;option value="7"&gt;7月&lt;/option&gt;
+        &lt;option value="8"&gt;8月&lt;/option&gt;
+        &lt;option value="9"&gt;9月&lt;/option&gt;
+        &lt;option value="10"&gt;10月&lt;/option&gt;
+        &lt;option value="11"&gt;11月&lt;/option&gt;
+        &lt;option value="12"&gt;12月&lt;/option&gt;
+    &lt;/select&gt;
+
+    &lt;select class="date"&gt;
+        &lt;option value=""&gt;日&lt;/option&gt;
+        &lt;option value="1"&gt;1日&lt;/option&gt;
+        &lt;option value="2"&gt;2日&lt;/option&gt;
+        &lt;option value="3"&gt;3日&lt;/option&gt;
+        &lt;option value="4"&gt;4日&lt;/option&gt;
+        &lt;option value="5"&gt;5日&lt;/option&gt;
+        &lt;option value="6"&gt;6日&lt;/option&gt;
+        &lt;option value="7"&gt;7日&lt;/option&gt;
+        &lt;option value="8"&gt;8日&lt;/option&gt;
+        &lt;option value="9"&gt;9日&lt;/option&gt;
+        &lt;option value="10" selected&gt;10日&lt;/option&gt;
+        &lt;option value="11"&gt;11日&lt;/option&gt;
+        &lt;option value="12"&gt;12日&lt;/option&gt;
+        &lt;option value="13"&gt;13日&lt;/option&gt;
+        &lt;option value="14"&gt;14日&lt;/option&gt;
+        &lt;option value="15"&gt;15日&lt;/option&gt;
+        &lt;option value="16"&gt;16日&lt;/option&gt;
+        &lt;option value="17"&gt;17日&lt;/option&gt;
+        &lt;option value="18"&gt;18日&lt;/option&gt;
+        &lt;option value="19"&gt;19日&lt;/option&gt;
+        &lt;option value="20"&gt;20日&lt;/option&gt;
+        &lt;option value="21"&gt;21日&lt;/option&gt;
+        &lt;option value="22"&gt;22日&lt;/option&gt;
+        &lt;option value="23"&gt;23日&lt;/option&gt;
+        &lt;option value="24"&gt;24日&lt;/option&gt;
+        &lt;option value="25"&gt;25日&lt;/option&gt;
+        &lt;option value="26"&gt;26日&lt;/option&gt;
+        &lt;option value="27"&gt;27日&lt;/option&gt;
+        &lt;option value="28"&gt;28日&lt;/option&gt;
+        &lt;option value="29"&gt;29日&lt;/option&gt;
+        &lt;option value="30"&gt;30日&lt;/option&gt;
+        &lt;option value="31"&gt;31日&lt;/option&gt;
+        &lt;option value="32"&gt;32日&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;</code></pre>
+</section>
+
+<section>
+    <h2>bb</h2>
+    2014-3-31 〜
+
+    <div class="sample">
+        <div class="flex three"
+             data-rejob-date-select
+             data-rejob-date-select-start="2014-3-31"
+             data-rejob-date-select-year=".year"
+             data-rejob-date-select-month=".month"
+             data-rejob-date-select-date=".date">
+
+            <div>
+                <select class="year">
+                    <option value="">Year</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                </select>
+            </div>
+
+            <div>
+                <select class="month">
+                    <option value="">Month</option>
+                    <optgroup label="First Quoter">
+                        <option value="Jan" data-rejob-date-select-value="1">Jan</option>
+                        <option value="Feb" data-rejob-date-select-value="2">Feb</option>
+                        <option value="Mar" data-rejob-date-select-value="3">Mar</option>
+                    </optgroup>
+                    <optgroup label="Second Quoter">
+                        <option value="Apr" data-rejob-date-select-value="4">Apr</option>
+                        <option value="May" data-rejob-date-select-value="5">May</option>
+                        <option value="Jun" data-rejob-date-select-value="6">Jun</option>
+                    </optgroup>
+                    <optgroup label="Third Quoter">
+                        <option value="Jul" data-rejob-date-select-value="7">Jul</option>
+                        <option value="Aug" data-rejob-date-select-value="8">Aug</option>
+                        <option value="Sep" data-rejob-date-select-value="9">Sep</option>
+                    </optgroup>
+                    <optgroup label="Forth Quoter">
+                        <option value="Oct" data-rejob-date-select-value="10">Oct</option>
+                        <option value="Nov" data-rejob-date-select-value="11">Nov</option>
+                        <option value="Dec" data-rejob-date-select-value="12">Dec</option>
+                    </optgroup>
+                </select>
+            </div>
+
+            <div>
+                <select class="date">
+                    <option value="">Date</option>
+                    <option value="1">1st</option>
+                    <option value="2">2nd</option>
+                    <option value="3">3rd</option>
+                    <option value="4">4th</option>
+                    <option value="5">5th</option>
+                    <option value="6">6th</option>
+                    <option value="7">7th</option>
+                    <option value="8">8th</option>
+                    <option value="9">9th</option>
+                    <option value="10">10th</option>
+                    <option value="11">11th</option>
+                    <option value="12">12th</option>
+                    <option value="13">13th</option>
+                    <option value="14">14th</option>
+                    <option value="15">15th</option>
+                    <option value="16">16th</option>
+                    <option value="17">17th</option>
+                    <option value="18">18th</option>
+                    <option value="19">19th</option>
+                    <option value="20">20th</option>
+                    <option value="21">21st</option>
+                    <option value="22">22nd</option>
+                    <option value="23">23rd</option>
+                    <option value="24">24th</option>
+                    <option value="25">25th</option>
+                    <option value="26">26th</option>
+                    <option value="27">27th</option>
+                    <option value="28">28th</option>
+                    <option value="29">29th</option>
+                    <option value="30">30th</option>
+                    <option value="31">31st</option>
+                    <option value="32">32nd</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <pre><code>&lt;div <span class="special-attr">data-rejob-date-select
+     data-rejob-date-select-start="2014-3-31"
+     data-rejob-date-select-year=".year"
+     data-rejob-date-select-month=".month"
+     data-rejob-date-select-date=".date"</span>&gt;
+
+    &lt;select class="year"&gt;
+        &lt;option value=""&gt;Year&lt;/option&gt;
+        &lt;option value="2018"&gt;2018&lt;/option&gt;
+        &lt;option value="2017"&gt;2017&lt;/option&gt;
+        &lt;option value="2016"&gt;2016&lt;/option&gt;
+        &lt;option value="2015"&gt;2015&lt;/option&gt;
+        &lt;option value="2014"&gt;2014&lt;/option&gt;
+    &lt;/select&gt;
+
+    &lt;select class="month"&gt;
+            &lt;option value=""&gt;Month&lt;/option&gt;
+        &lt;optgroup label=&quot;First Quoter&quot;&gt;
+            &lt;option value="Jan" <span class="special-attr">data-rejob-date-select-value="1"</span>&gt;Jan&lt;/option&gt;
+            &lt;option value="Feb" <span class="special-attr">data-rejob-date-select-value="2"</span>&gt;Feb&lt;/option&gt;
+            &lt;option value="Mar" <span class="special-attr">data-rejob-date-select-value="3"</span>&gt;Mar&lt;/option&gt;
+        &lt;/optgroup&gt;
+        &lt;optgroup label=&quot;Second Quoter&quot;&gt;
+            &lt;option value="Apr" <span class="special-attr">data-rejob-date-select-value="4"</span>&gt;Apr&lt;/option&gt;
+            &lt;option value="May" <span class="special-attr">data-rejob-date-select-value="5"</span>&gt;May&lt;/option&gt;
+            &lt;option value="Jun" <span class="special-attr">data-rejob-date-select-value="6"</span>&gt;Jun&lt;/option&gt;
+        &lt;/optgroup&gt;
+        &lt;optgroup label=&quot;Third Quoter&quot;&gt;
+            &lt;option value="Jul" <span class="special-attr">data-rejob-date-select-value="7"</span>&gt;Jul&lt;/option&gt;
+            &lt;option value="Aug" <span class="special-attr">data-rejob-date-select-value="8"</span>&gt;Aug&lt;/option&gt;
+            &lt;option value="Sep" <span class="special-attr">data-rejob-date-select-value="9"</span>&gt;Sep&lt;/option&gt;
+        &lt;/optgroup&gt;
+        &lt;optgroup label=&quot;Forth Quoter&quot;&gt;
+            &lt;option value="Oct" <span class="special-attr">data-rejob-date-select-value="10</span>"&gt;Oct&lt;/option&gt;
+            &lt;option value="Nov" <span class="special-attr">data-rejob-date-select-value="11</span>"&gt;Nov&lt;/option&gt;
+            &lt;option value="Dec" <span class="special-attr">data-rejob-date-select-value="12</span>"&gt;Dec&lt;/option&gt;
+        &lt;/optgroup&gt;
+    &lt;/select&gt;
+
+    &lt;select class="date"&gt;
+        &lt;option value=""&gt;Date&lt;/option&gt;
+        &lt;option value="1"&gt;1st&lt;/option&gt;
+        &lt;option value="2"&gt;2nd&lt;/option&gt;
+        &lt;option value="3"&gt;3rd&lt;/option&gt;
+        &lt;option value="4"&gt;4th&lt;/option&gt;
+        &lt;option value="5"&gt;5th&lt;/option&gt;
+        &lt;option value="6"&gt;6th&lt;/option&gt;
+        &lt;option value="7"&gt;7th&lt;/option&gt;
+        &lt;option value="8"&gt;8th&lt;/option&gt;
+        &lt;option value="9"&gt;9th&lt;/option&gt;
+        &lt;option value="10"&gt;10th&lt;/option&gt;
+        &lt;option value="11"&gt;11th&lt;/option&gt;
+        &lt;option value="12"&gt;12th&lt;/option&gt;
+        &lt;option value="13"&gt;13th&lt;/option&gt;
+        &lt;option value="14"&gt;14th&lt;/option&gt;
+        &lt;option value="15"&gt;15th&lt;/option&gt;
+        &lt;option value="16"&gt;16th&lt;/option&gt;
+        &lt;option value="17"&gt;17th&lt;/option&gt;
+        &lt;option value="18"&gt;18th&lt;/option&gt;
+        &lt;option value="19"&gt;19th&lt;/option&gt;
+        &lt;option value="20"&gt;20th&lt;/option&gt;
+        &lt;option value="21"&gt;21st&lt;/option&gt;
+        &lt;option value="22"&gt;22nd&lt;/option&gt;
+        &lt;option value="23"&gt;23rd&lt;/option&gt;
+        &lt;option value="24"&gt;24th&lt;/option&gt;
+        &lt;option value="25"&gt;25th&lt;/option&gt;
+        &lt;option value="26"&gt;26th&lt;/option&gt;
+        &lt;option value="27"&gt;27th&lt;/option&gt;
+        &lt;option value="28"&gt;28th&lt;/option&gt;
+        &lt;option value="29"&gt;29th&lt;/option&gt;
+        &lt;option value="30"&gt;30th&lt;/option&gt;
+        &lt;option value="31"&gt;31st&lt;/option&gt;
+        &lt;option value="32"&gt;32nd&lt;/option&gt;
+    &lt;/select&gt;
+&lt;/div&gt;</code></pre>
+</section>
+
+<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+<script async src="dist/scripts/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+/*!
+ * jquery.rejobDateSelect
+ * https://github.com/rejob/jquery.rejobDateSelect
+ *
+ * Copyright (c) 2016 Koji Iwasaki, REJOB Co., Ltd.
+ *
+ * Permission is hereby granted, free of charge, to any person obtaining a copy
+ * of this software and associated documentation files (the "Software"), to deal
+ * in the Software without restriction, including without limitation the rights
+ * to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+ * copies of the Software, and to permit persons to whom the Software is
+ * furnished to do so, subject to the following conditions:
+ *
+ * The above copyright notice and this permission notice shall be included in all
+ * copies or substantial portions of the Software.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ * FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+ * AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+ * LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+ * OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+ * SOFTWARE.
+ */
+
+/* Font Settings
+   ========================================================================== */
+
+/**
+ * Alphanumeric font
+ */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i');
+
+/**
+ * Define Yu Gothic Font face for Windows
+ * 1. Postscript name
+ * 2. font name for Chrome
+ * 3. if No Medium (for Windows 8.1)
+ */
+@font-face {
+  font-family: "MyYuGothicM";
+  font-weight: normal;
+  src:
+    /* 1 */ local("YuGothic-Medium"),
+    /* 2 */ local("Yu Gothic Medium"),
+    /* 3 */ local("YuGothic-Regular");
+}
+
+/**
+ * Define Yu Gothic Font face for Windows (bold)
+ * 1. Postscript name
+ * 2. font name for Chrome
+ */
+@font-face {
+  font-family: "MyYuGothicM";
+  font-weight: bold;
+  src:
+    /* 1 */ local("YuGothic-Bold"),
+    /* 2 */ local("Yu Gothic");
+}
+
+/**
+ * 1. for alphanumeric
+ * 2. 游ゴシック for Windows
+ * 3. 游ゴシック for OS X (after Mavericks)
+ * 4. iOS San Francisco
+ * 5. iOS Chrome San Francisco
+ * 6. OS X, iOS ヒラギノ
+ * 7. Windows メイリオ
+ */
+html,
+body {
+  font-family:
+    /* 1 */
+    'Open Sans',
+    Avenir,
+    "Helvetica Neue",
+    Helvetica,
+    Arial,
+    Verdana,
+    /* 2 */ MyYuGothicM,
+    /* 3 */ YuGothic,
+    /* 4 */ -apple-system,
+    /* 5 */ BlinkMacSystemFont,
+    /* 6 */ "Hiragino Kaku Gothic ProN",
+    /* 7 */ Meiryo,
+    sans-serif;
+}
+
+body {
+  max-width: 920px;
+  margin: 0 auto;
+}
+
+pre {
+  max-height: 500px;
+}
+
+.special-attr {
+  color: rgb(255, 65, 54);
+}
